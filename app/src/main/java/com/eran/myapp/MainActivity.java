@@ -16,4 +16,9 @@ public class MainActivity extends AppCompatActivity {
     {
         Toast.makeText(, "", Toast.LENGTH_SHORT).show();
     }
+
+    public void stam3()
+    {
+        bvnvbn;
+    }
 }
