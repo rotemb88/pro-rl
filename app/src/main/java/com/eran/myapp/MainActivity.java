@@ -19,6 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void stam3()
     {
-        bvnvbn;
+        bvnנננvbn;
     }
 }
