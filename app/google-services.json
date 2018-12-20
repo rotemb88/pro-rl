@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "350739664799",
+    "firebase_url": "https://projectrl-a891a.firebaseio.com",
+    "project_id": "projectrl-a891a",
+    "storage_bucket": "projectrl-a891a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350739664799:android:63af9d9eaa78ba9c",
+        "android_client_info": {
+          "package_name": "com.eran.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350739664799-9komfoksem9c3l02go1kgg2eg2lpa92u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYIgo8tA6lwE9sop9mOmEnCPU3IZPVYcI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
