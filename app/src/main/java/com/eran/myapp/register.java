@@ -4,11 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 public class register extends AppCompatActivity implements View.OnClickListener {
 
     private Button mainact;
+    private Spinner spinnerState;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +21,10 @@ public class register extends AppCompatActivity implements View.OnClickListener 
         mainact=(Button)findViewById(R.id.okbutton);
 
         mainact.setOnClickListener(this);
+
+        spinnerState = (Spinner) findViewById(R.id.spinner);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,getResources().getStringArray(R.array.listStates));
+        spinnerState.setAdapter(adapter);
     }
 
 
