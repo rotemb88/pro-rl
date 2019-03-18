@@ -12,15 +12,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button Reg;
     private  Button log;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button Reg=(Button)findViewById(R.id.register_btn);
-        Button log=(Button)findViewById(R.id.log_btn);
+        Reg=(Button)findViewById(R.id.register_btn);
+        log=(Button)findViewById(R.id.log_btn);
         Reg.setOnClickListener(this);
         log.setOnClickListener(this);
+
 
 
     }
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(MainActivity.this,Login.class));
 
         }
+
     }
 }
 
