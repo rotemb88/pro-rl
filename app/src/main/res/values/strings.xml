@@ -4,8 +4,8 @@
     <string name="title_activity_register">Register</string>
     <string-array name="listStates">
         <item>איזור צפון</item>
-        <item>איזור מרכז</item>
         <item>איזור דרום</item>
+        <item>איזור מרכז</item>
     </string-array>
 
 </resources>
