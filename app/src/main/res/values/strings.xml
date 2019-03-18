@@ -7,5 +7,6 @@
         <item>איזור דרום</item>
         <item>איזור מרכז</item>
     </string-array>
+    <string name="title_activity_tips">tips</string>
 
 </resources>
