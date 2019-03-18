@@ -10,16 +10,17 @@
     android:padding="10dp"
     tools:context=".Login">
 
-   <TextView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="שם משתמש" />
+        android:text="Email" />
 
     <EditText
-        android:id="@+id/user2txt"
+        android:id="@+id/emailtxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp"
+        android:inputType="textEmailAddress"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,11 +28,11 @@
         android:text="סיסמא" />
 
     <EditText
-        android:id="@+id/password2txt"
+        android:id="@+id/passwordtxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/ok2button"

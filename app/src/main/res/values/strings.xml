@@ -3,9 +3,9 @@
     <string name="title_activity_login">login</string>
     <string name="title_activity_register">Register</string>
     <string-array name="listStates">
-        <item name="איזור צפון"></item>
-        <item name="איזור דרום"></item>
-        <item name="איזור מרכז"></item>
+        <item>איזור צפון</item>
+        <item>איזור דרום</item>
+        <item>איזור מרכז</item>
     </string-array>
 
 </resources>
