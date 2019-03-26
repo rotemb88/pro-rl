@@ -15,7 +15,7 @@ import java.io.IOException;
 public class add extends AppCompatActivity {
     Button selectImage;
     private ImageView imageView;
-   private int REQUEST_CODE=1;
+    private int REQUEST_CODE=1;
     Uri imageuri;
     private static final int PICK_IMAGE=1;
 
