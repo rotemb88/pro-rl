@@ -213,7 +213,8 @@
         android:layout_marginStart="275dp"
         android:layout_marginLeft="275dp"
         android:layout_marginBottom="-167dp"
-        android:text="הוסף פנקס חיסונים" />
+        android:text="הוסף פנקס חיסונים"
+        tools:targetApi="lollipop" />
 
     <Button
         android:id="@+id/button6"
@@ -224,7 +225,9 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="-93dp"
-        android:text="הוסף מודעה" />
+        android:text="הוסף מודעה"
+        tools:targetApi="lollipop"
+        tools:ignore="RtlCompat" />
 
 
 </RelativeLayout>
