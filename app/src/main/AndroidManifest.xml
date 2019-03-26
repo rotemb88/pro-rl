@@ -21,7 +21,8 @@
         <activity android:name=".register" />
         <activity android:name=".Login" />
         <activity android:name=".menu" />
-        <activity android:name=".tips"></activity>
+        <activity android:name=".tips" />
+        <activity android:name=".add"></activity>
     </application>
 
 </manifest>
