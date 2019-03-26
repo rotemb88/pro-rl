@@ -7,31 +7,37 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
 
+    android:background="@drawable/im"
+
     android:padding="10dp"
     tools:context=".Login">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email" />
+        android:text="Email"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
     <EditText
         android:id="@+id/emailtxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
+        android:textStyle="bold"
         android:inputType="textEmailAddress"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="סיסמא" />
+        android:text="סיסמא"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
     <EditText
         android:id="@+id/passwordtxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
+        android:textStyle="bold"
         android:inputType="textPassword"/>
 
     <Button

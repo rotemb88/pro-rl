@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/im"
     tools:context=".menu">
 
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="238dp"
-        android:layout_height="217dp"
+        android:layout_width="227dp"
+        android:layout_height="186dp"
         android:layout_above="@+id/imageButton2"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="166dp"
-        android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/tipim"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="24dp"
+        app:srcCompat="@drawable/tippic"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="86dp"
@@ -24,15 +25,15 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="232dp"
-        android:layout_height="237dp"
+        android:layout_width="225dp"
+        android:layout_height="186dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginBottom="14dp"
-        app:srcCompat="@drawable/image2"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginBottom="111dp"
+        app:srcCompat="@drawable/adoppic"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="363dp" />
