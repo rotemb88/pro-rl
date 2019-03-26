@@ -17,9 +17,9 @@
 
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="70dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/buttonshape"
         android:fontFamily="casual"
         android:shadowColor="#07060D"
@@ -59,32 +59,5 @@
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="192dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="91dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="20dp"
-        android:outlineSpotShadowColor="11"
-        android:text=":צור קשר"
-        android:textStyle="bold"
-         />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="0dp"
-        android:text="email: app@gmail.com"
-        android:textStyle="bold" />
 
 </RelativeLayout>

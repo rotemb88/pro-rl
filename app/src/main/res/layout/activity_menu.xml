@@ -18,7 +18,9 @@
         app:srcCompat="@drawable/tipim"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="86dp" />
+        tools:layout_editor_absoluteY="86dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="166dp" />
 
     <ImageButton
         android:id="@+id/imageButton2"
