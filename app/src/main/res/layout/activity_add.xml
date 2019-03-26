@@ -138,7 +138,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="174dp"
         android:text="מין"
-        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:layout_alignParentRight="true" />
 
     <CheckBox
         android:id="@+id/checkBox3"
