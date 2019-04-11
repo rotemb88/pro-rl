@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 
 public class menu extends AppCompatActivity implements View.OnClickListener {
 
-    ImageButton tipimage, addimage;
+    ImageButton tipimage, addimage,search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,10 @@ public class menu extends AppCompatActivity implements View.OnClickListener {
 
         tipimage = (ImageButton) findViewById(R.id.imageButton);
         tipimage.setOnClickListener(this);
+
+        search = (ImageButton) findViewById(R.id.searchad);
+        search.setOnClickListener(this);
+
 
         addimage = (ImageButton) findViewById(R.id.imageButton2);
         addimage.setOnClickListener(this);
@@ -33,6 +37,11 @@ public class menu extends AppCompatActivity implements View.OnClickListener {
         if(v==addimage)
         {
             startActivity(new Intent(menu.this,add.class));
+
+        }
+        if(v==search)
+        {
+            startActivity(new Intent(menu.this,searchad.class));
 
         }
 

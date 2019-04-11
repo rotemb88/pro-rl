@@ -9,7 +9,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -22,11 +21,15 @@
         <activity android:name=".Login" />
         <activity android:name=".menu" />
         <activity android:name=".tips" />
-        <activity android:name=".add"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".add" />
+        <activity android:name=".profile" />
+        <activity android:name=".Vaccines" />
+        <activity android:name=".searchad"></activity>
     </application>
 
 </manifest>

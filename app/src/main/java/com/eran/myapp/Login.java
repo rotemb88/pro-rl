@@ -1,6 +1,7 @@
 package com.eran.myapp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -40,6 +41,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         String email = emailEdit.getText().toString().trim();
         String password = passEdit.getText().toString().trim();
         mAuth.signInWithEmailAndPassword(email,password);
+
+        //Toast.makeText(this, mAuth.getUid(), Toast.LENGTH_SHORT).show();
+        SharedPreferences sp = getSharedPreferences("DocPro" , MODE_PRIVATE);
+        sp.edit().putString("userid" , mAuth.getUid());
+
 
         if (email.isEmpty())
         {

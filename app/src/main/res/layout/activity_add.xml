@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/im"
+    android:orientation="vertical"
     tools:context=".add">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="279dp"
-        android:layout_height="196dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="9dp"
+        android:layout_width="160dp"
+        android:layout_height="183dp"
+        android:layout_gravity="center"
         android:src="@mipmap/ic_launcher" />
 
     <Button
@@ -21,161 +20,250 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:text="הוספת תמונה"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="250dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="250dp" />
+
+    <EditText
+        android:id="@+id/nameanimal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="333dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/nameanimal"
+        android:layout_alignRight="@id/nameanimal"
+        android:gravity="right"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <TextView
+        android:id="@+id/typeanimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/typeanimal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="390dp"
+        android:text="סוג בעל החיים"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/typeanimal1"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="375dp" />
+
+    <TextView
+        android:id="@+id/raceanimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/raceanimal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="334dp"
+        android:text="גזע"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/raceanimal1"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="286dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ageanimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/ageanimal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="248dp"
+        android:text="גיל"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ageanimal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="209dp"
+        android:ems="10"
+        android:hint="Enter Your Age"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/genderanimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/genderanimal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="168dp"
+        android:text="מין"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_alignStart="@+id/selectImage"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="308dp">
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/female"
+            android:layout_alignBottom="@+id/male"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="79dp"
+            android:layout_marginLeft="79dp"
+            android:layout_marginBottom="-2dp"
+            android:text="נקבה"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioSex"
+            android:layout_alignRight="@id/male"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="134dp"
+            android:text="זכר"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/traininganimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/traininganimal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="79dp"
+        android:text="רמת חינוך"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/traininganimal1"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="43dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nameanimal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-263dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        app:srcCompat="@drawable/profil" />
+
+    <TextView
+        android:id="@+id/profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nameanimal1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="לחץ להוספת פרטים אישיים"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Vaccination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/typeanimal1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-182dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="פנקס חיסונים" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/traininganimal1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-49dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text="הוסף מודעה" />
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/raceanimal1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="19dp"
+        android:text="מידע נוסף"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/raceanimal1"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="264dp"
-        android:layout_marginEnd="82dp"
+        android:layout_marginTop="-286dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="82dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/editText4"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="0dp"
-        android:text="שם בעל החיים"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="0dp" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="251dp"
-        android:text="סוג"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:layout_alignParentRight="true" />
-
-    <Spinner
-        android:id="@+id/spinner7"
-        android:layout_width="118dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView10"
-        android:layout_marginEnd="-8dp"
-        android:layout_marginBottom="2dp"
-        android:layout_toStartOf="@+id/textView9"
-        android:layout_marginRight="-8dp"
-        android:layout_toLeftOf="@+id/textView9" />
-
-    <Spinner
-        android:id="@+id/spinner13"
-        android:layout_width="118dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView10"
-        android:layout_marginEnd="-17dp"
-        android:layout_marginBottom="-122dp"
-        android:layout_toStartOf="@+id/textView9"
-        android:layout_marginRight="-17dp"
-        android:layout_toLeftOf="@+id/textView9" />
-
-    <Spinner
-        android:id="@+id/spinner14"
-        android:layout_width="118dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView10"
-        android:layout_marginEnd="-18dp"
-        android:layout_marginBottom="-152dp"
-        android:layout_toStartOf="@+id/textView9"
-        android:layout_marginRight="-18dp"
-        android:layout_toLeftOf="@+id/textView9" />
-
-    <Spinner
-        android:id="@+id/spinner15"
-        android:layout_width="118dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView10"
-        android:layout_marginEnd="-19dp"
-        android:layout_marginBottom="-180dp"
-        android:layout_toStartOf="@+id/textView9"
-        android:layout_marginRight="-19dp"
-        android:layout_toLeftOf="@+id/textView9" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="212dp"
-        android:text="גזע"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:layout_alignParentRight="true" />
-
-    <Spinner
-        android:id="@+id/spinner12"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView11"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="74dp"
-        android:layout_marginRight="74dp"
-        android:layout_marginBottom="-4dp" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="174dp"
-        android:text="מין"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:layout_alignParentRight="true" />
-
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="76dp"
-        android:layout_height="21dp"
-        android:layout_alignTop="@+id/textView12"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:text="זכר"
-        android:textColor="@color/common_google_signin_btn_text_dark_default" />
-
-    <CheckBox
-        android:id="@+id/checkBox5"
-        android:layout_width="76dp"
-        android:layout_height="21dp"
-        android:layout_alignTop="@+id/textView12"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginRight="121dp"
-        android:text="נקבה"
-        android:textColor="@color/common_google_signin_btn_text_dark_default" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="133dp"
-        android:text="מקום בארץ"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:layout_alignParentRight="true" />
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView14"
@@ -183,49 +271,42 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="102dp"
-        android:text="עיר"
+        android:layout_marginBottom="177dp"
+        android:text="אזור"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="0dp" />
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-177dp"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/female"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="70dp"
-        android:text="רמת חינוך"
+        android:text="עיר"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="0dp" />
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
 
-    <Button
-        android:id="@+id/button5"
-        style="@android:style/Widget.Material.Button.Inset"
-        android:layout_width="wrap_content"
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="144dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/checkBox5"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="275dp"
-        android:layout_marginLeft="275dp"
-        android:layout_marginBottom="-167dp"
-        android:text="הוסף פנקס חיסונים" />
-
-    <Button
-        android:id="@+id/button6"
-        style="@android:style/Widget.Material.Light.Button.Inset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/spinner15"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="-93dp"
-        android:text="הוסף מודעה" />
+        android:layout_above="@+id/traininganimal1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="0dp"
+        tools:ignore="RtlCompat" />
 
 
-</RelativeLayout>
+
+
+</LinearLayout>
