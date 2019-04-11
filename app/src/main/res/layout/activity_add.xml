@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -26,64 +26,52 @@
         tools:layout_editor_absoluteX="96dp"
         tools:layout_editor_absoluteY="250dp" />
 
+
+    <TextView
+        android:id="@+id/nameanimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="שם בעל החיים"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/nameanimal1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="333dp"
-        android:ems="10" />
-
-    <TextView
-        android:id="@+id/nameanimal"
-        android:layout_alignRight="@id/nameanimal"
-        android:gravity="right"
-        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
-        android:textStyle="bold"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content" />
+        android:ems="10"
+        android:gravity="right" />
 
     <TextView
         android:id="@+id/typeanimal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@id/typeanimal"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="390dp"
+        android:gravity="right"
         android:text="סוג בעל החיים"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold" />
 
     <Spinner
         android:id="@+id/typeanimal1"
-        android:layout_width="127dp"
+        android:layout_width="134dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="375dp" />
+        android:layout_marginBottom="375dp"
+        android:gravity="right"
+        android:visibility="visible"/>
 
     <TextView
         android:id="@+id/raceanimal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@id/raceanimal"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="334dp"
         android:text="גזע"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
         android:textStyle="bold" />
 
     <Spinner
         android:id="@+id/raceanimal1"
         android:layout_width="129dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginBottom="286dp"
         android:visibility="visible" />
 
@@ -132,7 +120,9 @@
         android:layout_below="@+id/textView15"
         android:layout_alignStart="@+id/selectImage"
         android:layout_marginStart="-15dp"
-        android:layout_marginTop="308dp">
+        android:layout_marginTop="308dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_alignLeft="@+id/selectImage">
 
         <RadioButton
             android:id="@+id/female"
@@ -161,7 +151,8 @@
             android:layout_marginBottom="134dp"
             android:text="זכר"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/radioSex" />
 
     </RadioGroup>
 
@@ -191,18 +182,6 @@
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginBottom="43dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/nameanimal"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="-263dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        app:srcCompat="@drawable/profil" />
 
     <TextView
         android:id="@+id/profil"
@@ -265,6 +244,15 @@
         android:inputType="textPersonName"
         tools:ignore="RtlCompat" />
 
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-177dp"
+        tools:ignore="RtlCompat" />
+
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
@@ -277,15 +265,6 @@
         android:textStyle="bold"
         tools:ignore="RtlCompat" />
 
-    <Spinner
-        android:id="@+id/spinner4"
-        android:layout_width="146dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView14"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="-177dp"
-        tools:ignore="RtlCompat" />
-
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
@@ -295,7 +274,7 @@
         android:text="עיר"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold"
-        tools:ignore="RtlCompat" />
+        tools:ignore="NotSibling,RtlCompat" />
 
     <Spinner
         android:id="@+id/spinner6"
@@ -306,7 +285,17 @@
         android:layout_marginBottom="0dp"
         tools:ignore="RtlCompat" />
 
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nameanimal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="423dp"
+        android:layout_marginEnd="335dp"
+        android:layout_marginRight="335dp"
+        app:srcCompat="@drawable/profil" />
 
 
-
-</LinearLayout>
+</RelativeLayout>

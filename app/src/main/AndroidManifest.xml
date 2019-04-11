@@ -29,7 +29,9 @@
         <activity android:name=".add" />
         <activity android:name=".profile" />
         <activity android:name=".Vaccines" />
-        <activity android:name=".searchad"></activity>
+        <activity android:name=".searchad" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".addnew"></activity>
     </application>
 
 </manifest>

@@ -11,5 +11,26 @@
 
     </string-array>
 
+    <string-array name="area">
+        <item>צפון</item>
+        <item>השרון</item>
+        <item>אזור ירושלים</item>
+        <item>מרכז</item>
+        <item>דרום</item>
+
+    </string-array>
+
+    <string-array name="train">
+        <item>ללא</item>
+        <item>נמוכה</item>
+        <item>בינונית</item>
+        <item>טובה</item>
+        <item>טובה  מאוד</item>
+        <item>מצוינת</item>
+
+    </string-array>
+
+
+
 </resources>
  

@@ -36,7 +36,7 @@ public class menu extends AppCompatActivity implements View.OnClickListener {
         }
         if(v==addimage)
         {
-            startActivity(new Intent(menu.this,add.class));
+            startActivity(new Intent(menu.this,addnew.class));
 
         }
         if(v==search)
