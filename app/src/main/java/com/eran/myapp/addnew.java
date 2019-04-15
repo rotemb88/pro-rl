@@ -1,6 +1,8 @@
 package com.eran.myapp;
 
+import android.app.usage.NetworkStats;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
@@ -19,6 +21,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.firebase.client.Firebase;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -59,6 +62,10 @@ public class addnew extends AppCompatActivity implements AdapterView.OnItemSelec
         trainspin=findViewById(R.id.traininganimal1);
         racespin=findViewById(R.id.raceanimal1);
         cityspin=findViewById(R.id.city1);
+
+        final SharedPreferences sp = getSharedPreferences("DocPro" , MODE_PRIVATE);
+        final FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        sp.edit().putString("userid" , mAuth.getUid());
 
 
 
@@ -124,7 +131,7 @@ public class addnew extends AppCompatActivity implements AdapterView.OnItemSelec
                     firebase.child("ad").child(todayAsString).child("city").setValue(cityspin.getSelectedItem().toString());
                     firebase.child("ad").child(todayAsString).child("gender").setValue(radioSexButton.getText());
                     firebase.child("ad").child(todayAsString).child("idad").setValue("???");
-                    firebase.child("ad").child(todayAsString).child("iduser").setValue("???");
+                    firebase.child("ad").child(todayAsString).child("iduser").setValue(mAuth.getUid());
                     firebase.child("ad").child(todayAsString).child("information").setValue(information.getText().toString());
                     firebase.child("ad").child(todayAsString).child("name").setValue(name.getText().toString());
                     firebase.child("ad").child(todayAsString).child("race").setValue(racespin.getSelectedItem().toString());

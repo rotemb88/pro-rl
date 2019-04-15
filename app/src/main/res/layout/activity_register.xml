@@ -10,10 +10,23 @@
     tools:context=".register">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/registersys"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email"
-        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+        android:text="הרשמה למערכת"
+        android:gravity="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+    <TextView
+
+        android:text="אימייל"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/emailtxt"
@@ -23,10 +36,14 @@
         android:inputType="textEmailAddress"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
         android:text="סיסמא"
-        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/passwordtxt"

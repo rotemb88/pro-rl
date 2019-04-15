@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="לצפייה לחץ כאן"
-        android:textSize="30sp"
+        android:textSize="15sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="125dp"
         tools:layout_editor_absoluteY="488dp" />
@@ -38,13 +38,15 @@
         tools:layout_editor_absoluteX="440dp"
         tools:layout_editor_absoluteY="489dp" />
 
-
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
+        android:layout_width="162dp"
+        android:layout_height="155dp"
+        android:layout_gravity="right"
         app:srcCompat="@android:drawable/ic_menu_report_image"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="103dp"
         tools:layout_editor_absoluteY="68dp" />
+
+
 </LinearLayout>
