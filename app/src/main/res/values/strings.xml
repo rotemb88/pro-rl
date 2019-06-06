@@ -1,17 +1,20 @@
 <resources>
     <string name="app_name">MyApp</string>
+    <string name="facebook_app_id">381696022447857</string>
+    <string name="fb_login_protocol_schema">fb381696022447857</string>
 
     <string-array name="animal">
+        <item>בחר</item>
         <item>כלב</item>
         <item>חתול</item>
         <item>חמוס</item>
-        <item>אוגר</item>
-        <item>תוכי</item>
-        <item>ארנב</item>
+        <item>תוכים ובעלי כנף</item>
+        <item>מכרסמים</item>
 
     </string-array>
 
     <string-array name="area">
+        <item>בחר</item>
         <item>צפון</item>
         <item>השרון</item>
         <item>אזור ירושלים</item>
@@ -21,7 +24,7 @@
     </string-array>
 
     <string-array name="train">
-        <item>ללא</item>
+        <item>בחר</item>
         <item>נמוכה</item>
         <item>בינונית</item>
         <item>טובה</item>
@@ -30,6 +33,12 @@
 
     </string-array>
 
+    <string-array name="Purpose">
+        <item>בחר</item>
+        <item>אומנה</item>
+        <item>אימוץ</item>
+
+    </string-array>
 
 
 </resources>

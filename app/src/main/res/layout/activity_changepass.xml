@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/nnn"
     android:orientation="vertical"
-    android:padding="10dp"
-    tools:context=".register">
+    android:background="@drawable/nnn"
+    android:visibility="visible"
+    tools:context=".changepass">
+
 
     <TextView
-        android:id="@+id/registersys"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="הרשמה למערכת"
         android:gravity="center"
+        android:text="שינוי סיסמא"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
-    <TextView
 
-        android:text="אימייל"
+    <TextView
+        android:id="@+id/passwordchange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="right"
+        android:text="סיסמא חדשה"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="30sp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/emailtxt"
+        android:id="@+id/passwordchange1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:inputType="textEmailAddress"/>
+        android:ems="10"
+        android:inputType="textPassword" />
 
     <TextView
-
-        android:text="סיסמא"
+        android:id="@+id/passwordchange2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="right"
+        android:text="אימות סיסמא חדשה"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="30sp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/passwordtxt"
+        android:id="@+id/passwordchange22"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:inputType="textPassword"/>
-
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
 
     <Button
-        android:id="@+id/okbutton"
+        android:id="@+id/ok3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="הרשם" />
-
+        android:text="אישור" />
 
 </LinearLayout>

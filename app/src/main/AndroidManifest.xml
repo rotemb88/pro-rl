@@ -3,11 +3,10 @@
     package="com.eran.myapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.STORAGE" />
-
-
 
     <application
         android:allowBackup="true"
@@ -28,17 +27,30 @@
         <activity android:name=".tips" />
         <activity android:name=".addnew" />
 
-
         <meta-data
             android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+            android:resource="@array/preloaded_fonts"/>
+
+
+
+
 
         <activity android:name=".add" />
         <activity android:name=".profile" />
         <activity android:name=".Vaccines" />
         <activity android:name=".searchad" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".addnew"></activity>
+        <activity android:name=".addnew" />
+        <activity android:name=".changepass" />
+        <activity android:name=".fullad" />
+        <activity android:name=".personalveccine" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".contactfullad"></activity>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
     </application>
 
 </manifest>

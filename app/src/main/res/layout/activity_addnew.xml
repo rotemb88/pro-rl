@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/im"
+    android:background="@drawable/nnn"
     tools:context=".addnew">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -20,16 +22,14 @@
         android:layout_gravity="center_horizontal"
         app:srcCompat="@mipmap/ic_launcher_round" />
 
-    <Button
-        android:id="@+id/selectImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="הוספת תמונה" />
 
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="בחר תמונה" />
 
-
-    <TextView
+        <TextView
         android:id="@+id/nameanimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,12 +60,12 @@
         android:layout_height="wrap_content"
         android:text="גזע בעל החיים" />
 
-    <Spinner
-        android:id="@+id/raceanimal1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/raceanimal1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <TextView
+        <TextView
         android:id="@+id/ageanimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -150,7 +150,79 @@
             android:ems="10"
             android:inputType="textPersonName" />
 
-    <Button
+        <TextView
+            android:id="@+id/Purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="מטרת המודעה:" />
+
+        <Spinner
+            android:id="@+id/spinnerprpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/details_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="פרטי קשר : "
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/first_name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=": שם פרטי" />
+
+        <EditText
+            android:id="@+id/first_name22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/last_name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=": שם משפחה" />
+
+        <EditText
+            android:id="@+id/last_name22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/email_person2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=": אימייל" />
+
+        <EditText
+            android:id="@+id/email_person22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/phone_person2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=":פלאפון" />
+
+        <EditText
+            android:id="@+id/phone_person22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <Button
             android:id="@+id/Vaccination"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -169,6 +241,15 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="הוסף מודעה" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="העלאה מתבצעת"/>
+
+
     </LinearLayout>
 
 

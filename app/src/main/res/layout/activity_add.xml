@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/im"
     android:orientation="vertical"
     tools:context=".add">
 
@@ -23,6 +22,7 @@
         android:layout_gravity="center"
         android:text="הוספת תמונה"
         tools:ignore="MissingConstraints"
+        android:background="@drawable/nnn"
         tools:layout_editor_absoluteX="96dp"
         tools:layout_editor_absoluteY="250dp" />
 

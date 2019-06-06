@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/im"
+    android:background="@drawable/nnn"
     tools:context=".tips">
 
 
@@ -13,7 +13,7 @@
         android:layout_width="352dp"
         android:layout_height="485dp"
         android:scrollbars="vertical"
-        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="15dp"

@@ -1,52 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="horizontal"
-    android:gravity="center_horizontal"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
 
-    <Button
-        android:id="@+id/clickme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="לצפייה לחץ כאן"
-        android:textSize="15sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="488dp" />
+    android:gravity="right"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/type"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="סוג החיה"
-        android:textSize="30sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="456dp"
-        tools:layout_editor_absoluteY="566dp" />
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="130dp"
-        android:layout_height="33dp"
-        android:text="שם החיה"
-        android:textSize="30sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="440dp"
-        tools:layout_editor_absoluteY="489dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="162dp"
-        android:layout_height="155dp"
-        android:layout_gravity="right"
-        app:srcCompat="@android:drawable/ic_menu_report_image"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="68dp" />
+
+        <ImageButton
+            android:id="@+id/clickme"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_weight="1"
+            android:text="לצפייה לחץ כאן"
+            android:textSize="15sp"
+            app:srcCompat="@drawable/view1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="488dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="שם החיה"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="סוג החיה"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="47dp"
+            android:layout_height="155dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_report_image"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="68dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/common_google_signin_btn_text_light_focused" />
+
+    </LinearLayout>
 
 
 </LinearLayout>

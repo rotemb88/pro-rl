@@ -29,6 +29,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         login=(Button)findViewById(R.id.ok2button);
         login.setOnClickListener(this);
 
+
         mAuth = FirebaseAuth.getInstance();
         emailEdit = (EditText) findViewById(R.id.emailtxt);
         passEdit = (EditText) findViewById(R.id.passwordtxt);
@@ -80,6 +81,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful())
                 {
+                    String s=mAuth.getFirebaseAuthSettings().toString().trim();
+
                     startActivity(new Intent(Login.this,menu.class));
                 }
                 else
@@ -98,6 +101,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             loginUser();
 
         }
+
     }
 
 }

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/im"
+    android:background="@drawable/nnn"
     android:visibility="visible"
     tools:context=".profile">
 
@@ -15,9 +15,9 @@
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="פרטים אישיים"
         android:gravity="center"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:text="פרטים אישיים"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="50sp"
         android:textStyle="bold" />
 
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:gravity="right"
         android:text="שם פרטי"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:gravity="right"
         android:text="שם משפחה"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:gravity="right"
         android:text="אימייל"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -78,7 +78,7 @@
         android:layout_height="wrap_content"
         android:gravity="right"
         android:text="פלאפון"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="30sp"
         android:textStyle="bold" />
 

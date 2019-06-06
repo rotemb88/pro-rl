@@ -5,38 +5,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/im"
+    android:background="@drawable/nnn"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context=".menu">
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="לעדכון סיסמא לחץ כאן"
-        android:textColor="@color/common_google_signin_btn_text_dark_default" />
-
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/tippic"
-         />
+        android:layout_width="290dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/tipnew3" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="190dp"
-        android:layout_height="186dp"
-        app:srcCompat="@drawable/adoppic"
-        tools:ignore="MissingConstraints,NotSibling" />
+        android:layout_width="290dp"
+        android:layout_height="102dp"
+        app:srcCompat="@drawable/adopt2" />
 
     <ImageButton
         android:id="@+id/searchad"
-        android:layout_width="137dp"
-        android:layout_height="122dp"
-        app:srcCompat="@drawable/search3" />
+        android:layout_width="290dp"
+        android:layout_height="102dp"
+        app:srcCompat="@drawable/searchad3" />
+
+    <Button
+        android:id="@+id/deleteuser"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הסרת משתמש מהמערכת"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <Button
+        android:id="@+id/changepass"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="שינוי סיסמא"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+
 
 
 </LinearLayout>
